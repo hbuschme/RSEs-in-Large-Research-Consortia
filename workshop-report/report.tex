@@ -183,9 +183,10 @@ Another workshop in Cologne, hosted \cite{bastian_2025} and organised by the DIN
 noted first, that no participant has been to any
 of the previous workshops, and second, that following the rules is still a better motivator for following data
 management guidelines, rather than any intrinsic motivation from the scientists.
-In March 2026, a small de-RSE26 workshop showed an equal presence of Research Software Engineers and Research Data Managers.\\
+In March 2026, a small de-RSE26 workshop showed an equal presence of Research Software Engineers and Research Data Managers.
 Already early on \cite{mueckschel2006} it was noted that central challenges of data management solutions would be
 \begin{itemize}
+\itemsep-0.5em
  \item personnel fluctuations over the runtime of a CRC,
  \item safe storage for the lifetime of a CRC,
  \item adaptation to the scientists' questions over the evolution of their research
@@ -195,8 +196,8 @@ Already early on \cite{mueckschel2006} it was noted that central challenges of d
  \item leadership support
 \end{itemize}
 of any measure of the information system administered by the data stewards.
-These are topics that persist until today,
-and we will try to find out which answers the current generation of INF projects finds.
+These are topics that persist till today,
+and we try to find out which answers the current generation of INF projects finds.
 
 \section{INF Projects in Germany}
 \label{sec:inf-in-germany}
@@ -305,9 +306,9 @@ Since the research questions explicitly require the integration of various cross
 For this purpose, various platforms are provided as container-based solutions (in Docker and Kubernetes) to ensure sustainability and portability, as well as to extend existing implementations.
 Our \href{https://about.gitlab.com/}{\textit{GitLab}} instance facilitates collaborative software development, while the web-based \href{https://nextcloud.com}{\textit{Nextcloud}} platform enables the storage of research results and provides centralized data backup.
 Concurrently, a container-based server solution was developed for data acquisition, allowing experiments to be configured, shared, and executed online using open-source software such as PCIbex~\cite{Zehr:Schwarz:2018}.
-Furthermore, localized large language models (LLMs) and visual language models (VLMs) can be accessed via an \href{https://openwebui.com/}{\textit{OpenWebUI}} instance, which utilizes a dedicated Nvidia H200 GPU.
+Furthermore, localized large language models (LLMs) and visual language models (VLMs) can be accessed via an \href{https://openwebui.com/}{\textit{OpenWebUI}} instance utilising a dedicated Nvidia H200 GPU.
 In addition, a \href{https://jupyter.org/hub}{\textit{Jupyter Hub}} (with Single Sign-On) is available for implementing web-based scripts and performing analyses using different models.
-These advancements contribute to the instantiation of reusable software components within the distributed big data infrastructure \textit{DUUI}~\cite{Leonhardt:et:al:2023}, which enables container-based NLP methods, including the LLMs, within cluster solutions~\cite{Abrami:et:al:2025:a}.
+These advancements contribute to the instantiation of reusable software components within the distributed big data infrastructure \textit{DUUI}~\cite{Leonhardt:et:al:2023}, which enables container-based NLP methods, within cluster solutions~\cite{Abrami:et:al:2025:a}.
 Through DUUI, heterogeneous implementations of methods, data formats~\cite{Hammerla:et:al:2025a}, and modalities~\cite{Bundan:Abrami:Mehler:2025} can be effectively processed, whereby a web- and API-based solution is also available through \textit{DUUIgateway}~\cite{Borkowski:et:al:2026}.
 
 For versioning and repurposing of research results, a web-based metadata platform was developed that allows the flexible documentation of various types of information, including theoretical, experimental, and fieldwork-based materials.
@@ -466,7 +467,7 @@ formats, metadata, and data management plans in alignment with FAIR principles, 
 by tools such as RDMO. Based on this, we establish workflows for data curation, storage, and
 long-term accessibility, making use of repository solutions such as \href{https://data.tu-dortmund.de/}{TUDOdata} and Zenodo.
 In parallel, we promote reproducible software development by encouraging the use of
-version control systems (\eg, Git/GitHub), documentation standards, and structured
+version control systems (\eg, git/GitHub), documentation standards, and structured
 development workflows. We also work on improving interoperability by developing shared
 interfaces and data exchange standards across projects.
 Finally, we contribute to dissemination and sustainability by sharing developed concepts and
@@ -498,18 +499,20 @@ The VRE acts as a centralised system that comprises different software component
 \subsection{Project Z3 --- Research Data Management, TRR~410 - \href{https://wetscapes2.uni-greifswald.de/}{WETSCAPES2.0}, Greifswald, Rostock}
 WETSCAPES2.0 is a large interdisciplinary research initiative which is focused on exploring rewetted peatland landscapes called "wetscapes" in north-east Germany and understanding how their restoration affects different environmental factors like climate, water systems, biodiversity, and ecosystems.
 The RDM component is concerned with building and maintaining a data infrastructure for the purpose of collection, management, analysis, visualisation, and sharing of heterogeneous environmental data.
-The data is generated by manually collecting data in \elabftw ~as well as from different sensors and monitoring systems deployed across different experimental sites that continuously monitor different environmental variables like air temperature, humidity, soil moisture, and other geophysical parameters.
+The data is generated by manually collecting data in \elabftw ~as well as from various sensors and monitoring systems deployed across different experimental sites that continuously monitor environmental variables like air temperature, humidity, soil moisture, and other geophysical parameters.
 The sensor data are transmitted through gateways to \href{https://eu1.cloud.thethings.network/}{The Things Network~(TTN)} then stored in a time-series database using \href{https://www.influxdata.com/}{InfluxDB}.
-The heterogeneous data are harmonised and quality checked and made accessible through web applications for \href{https://retrieval.wetscapes.uni-rostock.de/}{visualisation} and \href{https://explorer.wetscapes.uni-rostock.de/}{analysis} according to the FAIR principles.
-The metadata related to the sensors are managed using the \href{https://sensors.gfz.de/}{GFZ Sensor Management System}. \href{https://apphub.wolke.uni-greifswald.de/}{Apphub} is offered as a platform hosting various software tools for data analysis and other computationally resource-intensive tasks.
-\href{https://ckan.fdm.uni-greifswald.de/}{CKAN} is used as the central repository for the data storage, sharing, publishing, and long-term reuse of data.
+The heterogeneous data are harmonised, quality checked and made accessible through web applications for \href{https://retrieval.wetscapes.uni-rostock.de/}{visualisation} and \href{https://explorer.wetscapes.uni-rostock.de/}{analysis} according to the FAIR principles.
+The metadata related to the sensors are managed using the \href{https://sensors.gfz.de/}{GFZ Sensor Management System}. \href{https://apphub.wolke.uni-greifswald.de/}{Apphub} is offered as a platform hosting various software tools for data analysis computationally resource-intensive tasks.
+\href{https://ckan.fdm.uni-greifswald.de/}{CKAN} is the central repository for the data storage, sharing, publishing, and long-term reuse of data.
 
 \subsection{Project INF --- Research data management and collaboration platform, \href{https://gepris.dfg.de/gepris/projekt/541063275?language=en}{TRR~418 -- Foundations of Circadian Medicine}, Berlin/Lübeck/Munich}
 The INF project of TRR 418 “Foundations of Circadian Medicine” combines expertise in medical informatics, health data privacy, and bioinformatics at Charité – Universitätsmedizin Berlin and the Berlin Institute of Health (BIH).
 It supports a transregional consortium investigating how circadian clocks shape physiology and disease and how this knowledge can be translated into medical research and practice. Because the TRR combines preclinical and clinical work across several sites, the INF project was conceived as an enabling structure for coordination, data stewardship, and cross-project reuse. Its main focus lies on a platform for broadly sharing circadian profiles and reproducible computational workflows, complemented by privacy-related guidance and training \cite{baum_data_circadian_2023}.
 A defining feature of the TRR is its reliance on longitudinal and rhythmic data, ranging from high-resolution sensor and wearable data to clinical, phenotypic, and omics datasets.
-The INF project, therefore, aims to create an environment in which such heterogeneous data can be documented, exchanged, processed, and explored in a consistent way. Planned components include a collaboration platform and services for FAIR data management with a particular emphasis on temporal data and tools for exploring circadian and omics data across projects.
-Analogously to the INF project of \hyperref[sec:sfb1340]{CRC 1340}, this project is embedded in institutional and national infrastructures. An expected challenge is the adoption of common data representations, ontologies and workflows across projects that differ widely in modality, temporal resolution, and regulatory context. Easier to adopt will likely be services with immediate practical benefit, such as shared collaboration spaces, and support for reproducible data and code handling.
+Hence the INF project aims to create an environment in which heterogeneous data can be documented, exchanged, processed, and explored in a consistent way. Planned components include a collaboration platform and services for FAIR data management with a particular emphasis on temporal data and tools for exploring circadian and omics data across projects.
+Analogously to the INF project of \hyperref[sec:sfb1340]{CRC 1340}, this project is embedded in institutional and national infrastructures.
+An expected challenge is the adoption of common data representations, ontologies and workflows across projects that differ widely in modality, temporal resolution, and regulatory context.
+Easier to adopt will likely be services with immediate practical benefit, such as shared collaboration spaces, and support for reproducible data and code handling.
 Since the project started only in October 2025, its contribution so far is mainly the coordinated establishment of shared structures; the central lesson at this stage is that, in a consortium centered on circadian and longitudinal data, INF work must integrate RDM, RSE, privacy, and domain-specific analytics from the outset rather than treating them as separate support functions.
 
 \subsection{Advancing Digital Research: RDM and RSE at TU Dresden}
@@ -530,7 +533,6 @@ Structurally, VDR is part of the department ``\href{https://tu-dresden.de/zih}{I
 It serves as a node for interdisciplinary research, providing cutting-edge computational infrastructure and expertise.
 ZIH focuses on developing innovative solutions for computational science and data-intensive applications,
 enabling researchers to tackle complex challenges and advance digital research methods across various disciplines on national and international level.
-
 ZIH, in turn, is embedded in the ``\href{https://tu-dresden.de/cids}{Center for Interdisciplinary Digital Sciences}'' (CIDS), a central academic unit of TU Dresden, designed as a
 strategic hub for advancing the digital transformation by fostering interdisciplinary collaboration, research, and innovation in the digital sciences.
 CIDS integrates expertise across fields such as High-Performance Computing, data analytics, and Artificial Intelligence and addresses complex challenges in research, education, and technology.
@@ -546,7 +548,7 @@ Only around ten percent are currently doing a PhD, while almost a third has a pe
 When asked about their contract hours, about a third was fully employed for the INF project, another third had half a position, and the remaining third was distributed across the range.
 \begin{figure}
  \includegraphics[width=0.48\linewidth]{rse-rdm.png}
- \includegraphics[width=0.48\linewidth]{tools.png}
+ \includegraphics[width=0.48\linewidth]{fig2.png}
  \caption{
  In the left figure, we see that INF projects see themselves on a spectrum between RSEs and data stewards. We have no data on how people who answered ``Other'' see themselves.\\
  In the right figure, we see that while there is a broad spectrum of very specialised tools that come from each domain, there is also a core of common tooling
@@ -627,15 +629,12 @@ To address these challenges, training efforts should be complemented by consulti
 This allows for more targeted support and helps bridge the gap between theoretical knowledge and practical implementation.
 In many cases, basic training is already provided by INF teams themselves, but there is clear value in expanding beyond these internal efforts.
 Leveraging external training opportunities -- such as those offered externally to the CRC or broader initiatives -- can help diversify and strengthen the available training landscape.
-
-Another important dimension is the relationship between different communities, particularly between INF projects and domain researchers.
+portant dimension is the relationship between different communities, particularly between INF projects and domain researchers.
 In some fields, formal certification processes are difficult to establish, partly due to mutual uncertainties and a lack of shared understanding.
 This underscores the need for improved communication and information exchange between these communities.
-
 Training is not only relevant for researchers but also for RSEs, Data Stewards, and other support roles, whose professional development is equally important for sustaining high-quality research environments.
 In some cases, dedicated positions exist with explicit responsibility for training, extending beyond purely infrastructure-related topics.
 However, these roles are often developed “on the job,” and a recurring issue is the lack of recognition through traditional academic outputs such as publications.
-
 Overall, strengthening education and training in this space requires a combination of better curation,
 audience-specific design, integration of domain tools, and closer alignment with real research practices.
 Equally important are structural improvements, such as fostering cross-community exchange and recognising training-related work as a valuable professional contribution.
@@ -645,13 +644,11 @@ The workshop discussions established that while automated tools are rapidly adva
 In fields dealing with sensitive clinical or animal data, researchers are increasingly adopting a "human-in-the-loop" approach.
 Within this framework, machine learning models and locally-hosted or privacy preserving Large Language Models (LLMs) are utilised to suggest metadata or classify complex datasets, which are then verified through expert visualisation and manual checks.
 This method ensures that data privacy is maintained while leveraging AI to handle the increasing volume of research outputs.
-
 Technical validation becomes more complex as software grows in scale, requiring sophisticated containerisation and environment management.
 Participants identified tools such as Pixi and the MaRDI packaging system as essential for managing dependencies and namespaces in large-scale projects.
 For dynamic datasets that change over time, static identifiers alone are often insufficient to guarantee reproducibility.
 Instead, modular Jupyter notebooks and data chunking strategies are used to document specific states and edge cases, ensuring results can be reconstructed even when the underlying data are not static.
 Furthermore, implementing CI/CD pipelines and automated testing allows for the continuous monitoring of software quality, specifically checking for breaking changes or inconsistencies caused by random seeds and stochastic processes.
-
 Finally, the long-term quality of artefacts depends on the rigorous use of ELNs like \href{https://chemotion.net/}{Chemotion}, \elabftw, and Sciformation to capture  experimental procedures and data provenance at the point of origin.
 Integrating ELNs with established repositories like \href{https://dataverse.org/}{Dataverse}/\href{https://darus.uni-stuttgart.de/dataverse/darus}{DaRUS} enables structured, metadata-rich publication of experimental data, while version control platforms like GitHub support the parallel management of research software.
 Despite these tools, the workshop highlighted a persistent gap in the quality of researcher-provided metadata, pointing to the need for better training and workflow integration to ensure artefacts remain verifiable and reusable over the long term.
@@ -677,7 +674,7 @@ Other topics that hinder adoption are the availability of the inputs to the work
 Findability of the respective responsible users can be a problem, or
 it can be difficult to get the permission to use input data.
 % Re-Use and Maintenence are an issue.
-There is a lack of awareness of the benefits of automation, which often leads to people not taking the first steps.
+Limited awareness of automation benefits often prevents people from getting started.
 Possible solutions that the participants discussed are the use of an RAG (Retrieval-Augmented Generation) supported Chat-Agent for scientists,
 or easy/good documentation.
 
