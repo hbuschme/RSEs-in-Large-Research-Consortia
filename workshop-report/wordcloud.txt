@@ -1,0 +1,91 @@
+Git x 7
+Python x 7
+Gitlab x 6
+eLabFTW x 6
+R x 5
+Docker x 4
+Jupyter x 3
+VSCode x 3
+DataLad x 2
+Git(hub) x 2
+Grafana x 2
+Microsoft Visual Studio x 2
+REDCap x 2
+AQUARIUS (SQL database)
+ATiM
+Annotation tools
+Aritifical Intelligence
+BIDS-standard
+C++
+CKAN
+Chevie
+Claude
+Coffee
+Corpus Search Tools
+Cursor
+DBeaver
+Dokuwiki
+Fiji (is just ImageJ)
+Fork
+GAP
+Gcc
+Git Extensions
+Git-annex
+Hecke
+Java
+LinkML
+Linux
+Gitlab
+Vscode
+MS Office
+MatInf
+Mediaflux
+Ms office, Overleaf
+NOMAD
+Nextcloud
+Nikon NIS-Elements
+Notepad++
+OBO-framework
+OMERO
+ORSEE
+OSCAR
+OpenBIS API
+OpenIris
+PICLas
+PUMA/DaRUS
+Postman
+Praat
+Protege
+Python
+Java
+Javascript
+Python/Jupyter
+RDMO
+Redcap
+API
+Python
+Remote Desktop Services
+Rstudio
+SQL
+SQL Server Management Stu
+Semantic Media Wiki
+Sharepoint
+Storage: Group Drive
+VM
+VS code (python/jupyter)
+XNAT
+Zenodo
+apptainer
+bespoke application
+chatgpt
+dataverse
+forgejo-ankesajo
+high-seas
+julia
+kant
+mattermost
+nextflow
+pari/gp
+seafile
+software developer tools
+uv
